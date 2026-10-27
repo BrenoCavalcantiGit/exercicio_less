@@ -1,0 +1,14 @@
+// Mixins reutilizáveis (os parênteses evitam que virem classes no CSS)
+.centralizar() {
+    max-width: @largura-max;
+    margin: 0 auto;
+    padding: 0 @espaco;
+}
+
+.transicao(@propriedade: all; @tempo: .3s) {
+    transition: @propriedade @tempo ease;
+}
+
+.sombra(@opacidade: .3) {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, @opacidade);
+}

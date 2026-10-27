@@ -1,0 +1,27 @@
+// Usa as variáveis escapadas (@tablet e @mobile) nas regras de mídia
+@media @tablet {
+    .header .header__conteudo {
+        flex-direction: column;
+        height: auto;
+        padding: 10px @espaco;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media @mobile {
+    .header .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 8px 14px;
+    }
+}

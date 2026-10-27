@@ -1,0 +1,28 @@
+.footer {
+    padding: 30px @espaco;
+    text-align: center;
+    background: @cores[superficie];
+
+    .redes {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 15px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border: 2px solid @cores[destaque];
+            border-radius: 50%;
+            .transicao();
+
+            &:hover {
+                background: @cores[destaque-escuro];
+                transform: translateY(-3px);
+            }
+        }
+    }
+}

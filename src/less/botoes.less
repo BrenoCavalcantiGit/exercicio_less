@@ -1,0 +1,33 @@
+// Botões reutilizáveis (usados no menu e no hero)
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: @raio;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    .transicao();
+
+    &--primario {
+        background: @botao-primario[fundo];
+        color: @botao-primario[texto];
+
+        &:hover {
+            background: @botao-primario[hover];
+            transform: translateY(-2px);
+        }
+    }
+
+    &--secundario {
+        background: @botao-secundario[fundo];
+        color: @botao-secundario[texto];
+        border-color: @botao-secundario[borda];
+
+        &:hover {
+            background: @botao-secundario[hover];
+            color: @botao-primario[texto];
+            transform: translateY(-2px);
+        }
+    }
+}

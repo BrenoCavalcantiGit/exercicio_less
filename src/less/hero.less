@@ -1,0 +1,31 @@
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
+    background: linear-gradient(rgba(30, 39, 46, .7), rgba(30, 39, 46, .9)),
+                url('../../images/coruja.jpg') center / cover;
+
+    .hero__conteudo {
+        .centralizar();
+        // Escaping: o calc precisa ser escrito como texto para o LESS não calcular
+        width: ~"calc(100% - @{espaco-lateral})";
+    }
+
+    h1 {
+        margin-bottom: 10px;
+        font-size: 3rem;
+
+        span {
+            color: @cores[destaque];
+        }
+    }
+
+    .hero__botoes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+    }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "exercicio-less",
+  "version": "1.0.0",
+  "description": "Exercício de LESS: variáveis, divisão de arquivos, escapings e mapas",
+  "scripts": {
+    "build": "lessc src/less/main.less dist/css/main.css",
+    "watch": "nodemon --watch src/less --ext less --exec \"npm run build\""
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^4.2.0",
+    "nodemon": "^3.1.0"
+  }
+}
